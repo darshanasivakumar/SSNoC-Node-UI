@@ -111,8 +111,37 @@ h3{
 .user-info {
   margin-bottom: 20px;
 }
+
 .dropdown-user {
   margin: 13px 0;
   padding: 0px;
   height: 100%;
+}
+
+.redButtonStyle {
+width:405px;
+height:70px;
+background-size: 100%;
+background: #FFF url('/img/red.png');
+}
+
+.yellowButtonStyle {
+width:405px;
+height:70px;
+background-size: 100%;
+background: #FFF url('/img/yellow.png');
+}
+
+.greenButtonStyle {
+width:405px;
+height:70px;
+background-size: 100%;
+background: #FFF url('/img/green.png');
+}
+
+.blueButtonStyle {
+width:405px;
+height:70px;
+background-size: 100%;
+background: #FFF url('/img/blue.png');
 }

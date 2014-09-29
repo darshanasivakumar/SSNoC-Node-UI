@@ -13,6 +13,9 @@ module.exports = function(app, _, io, participants, passport) {
   app.get("/user", isLoggedIn, user_controller.getUser);
   app.get('/signup', user_controller.getSignup);
   app.get("/logout", isLoggedIn, user_controller.getLogout);
+
+   app.get("/status", isLoggedIn, user_controller.getStatus);
+
   app.post("/login", passport.authenticate('local-login', {
     successRedirect : '/people',
     failureRedirect : '/',

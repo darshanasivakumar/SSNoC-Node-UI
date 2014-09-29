@@ -41,6 +41,14 @@ module.exports = function(_, io, participants, passport, refreshAllUsers) {
 
     getWelcome : function(req, res) {
       res.render('welcome', {title: "Hello " + req.session.passport.user.user_name + " !!"} );
-    }
+    },
+
+    getStatus : function(req, res) {
+         res.render('status', {message: req.flash('signupMessage')});
+    },
+
+    postStatus : function(req, res) {
+         return res.redirect('/status');
+    },
   };
 };

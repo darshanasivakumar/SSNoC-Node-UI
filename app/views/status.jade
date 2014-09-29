@@ -1,0 +1,21 @@
+doctype html
+html
+  include includes/head.jade
+  include includes/navbar.jade
+  script(src='/js/status.js')
+  link(rel='stylesheet', href='/css/style.css')
+  title SSNoC - Status
+
+  body
+    center
+        br
+        br
+        h3 Select Status
+
+        button(type="submit", class='redButtonStyle' id="red", onclick="checkStatus('emergency')")
+        br
+        button(type="submit", class='yellowButtonStyle' id="yellow", onclick="checkStatus('help')")
+        br
+        button(type="submit", class='greenButtonStyle' id="green" onclick="checkStatus('safe')")
+        br
+        button(type="submit", class='blueButtonStyle' id="blue" onclick="checkStatus('no status')")
